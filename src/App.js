@@ -1,28 +1,23 @@
+import React from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Logo from './components/Logo';
-import Input from './components/Input';
-import Title from './components/Title';
-import Login from './components/Login'
-import {Container } from 'react-bootstrap';
-import Footer from './components/Footer'
+import {BrowserRouter as Router,Switch,Route} from 'react-router-dom';
+import Home from './components/Home';
+
 
 function App() {
   return (
-    
-       <div className="App">
-         <Container>
-         <Logo/>
-        <Title/>
-        <Input/>
-        <Login/>
-        
-        </Container>
-        <Footer/>
-       
-      </div>
-   
-   
+    <Router>
+    <div className="App">
+      <Switch>
+
+        <Route exact path="/">
+           <Home/>
+        </Route>
+
+
+      </Switch>
+    </div>
+</Router>
   );
 }
 

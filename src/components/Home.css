@@ -1,0 +1,13 @@
+.home{
+    background-image:url("../images/Group\ 18.png"),url("../images/Group\ 16.png"),url("../images/Group\ 21.png"),url('../images/Group\ 20.png');
+    background-repeat: no-repeat,no-repeat,no-repeat,no-repeat;
+    background-size: 850px 580px,100vw 120vh,0px,0px;
+    background-position:660px 85px,200px 0px,center,center;
+    min-height: 120vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .home{
+        background-image: none;
+    }
+   }

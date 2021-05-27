@@ -1,0 +1,18 @@
+.footer{
+    background-image: url('../images//Group\ 19.png'),url('../images/Group\ 17.png');
+    background-position: 100px 45px,0px 0px;
+    background-repeat: no-repeat,no-repeat;
+    background-size: 500px 300px,100vw 100%;
+    min-height: 70vh;
+}
+@media only screen and (max-width: 600px) {
+  .footer{
+      
+      background-image: url('../images/Group\ 17.png');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100vw;
+
+  }
+}
